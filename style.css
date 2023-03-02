@@ -1,0 +1,40 @@
+.bg_image{
+    background-image: url("images/legal_bg.jpg");
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#search{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+}
+.right{
+    background-color: rgb(238, 107, 59);
+    padding: 10px;
+    border-radius: 50%;
+}
+.f-icon{
+    padding-left: 50px;
+    font-size: 1.5rem;
+}
+.hoverable:hover{
+    background-color: aliceblue;
+    border: 5px solid rgb(250, 252, 252);
+}
+.inner_question_area{
+    width: 50vw;
+}
+.flex_area{
+    display: flex;
+}
+@media screen and (max-width: 775px){
+    .flex_area{
+        display: grid;
+    }
+    .inner_question_area{
+        width:100vw;
+    }
+}

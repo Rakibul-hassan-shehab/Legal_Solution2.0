@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1, h2, p {
+  text-align: center;
+  color: red;
+}
+</style>
+</head>
+<body>
+
+<h1>Hello World!</h1>
+<h2>Smaller heading!</h2>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: linen;
+}
+
+h1 {
+  color: maroon;
+  margin-left: 40px;
+} 
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+
+
+/* This is a single-line comment */
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  background-color: green;
+}
+
+div.first {
+  opacity: 0.1;
+}
+
+div.second {
+  opacity: 0.3;
+}
+
+div.third {
+  opacity: 0.6;
+}
+</style>
+</head>
+<body>
+
+<h1>Transparent Boxes</h1>
+
+<p>When using the opacity property to add transparency to the background of an element, all of its child elements become transparent as well. This can make the text inside a fully transparent element hard to read:</p>
+
+<div class="first">
+  <h1>opacity 0.1</h1>
+</div>
+
+<div class="second">
+  <h1>opacity 0.3</h1>
+</div>
+
+<div class="third">
+  <h1>opacity 0.6</h1>
+</div>
+
+<div>
+  <h1>opacity 1 (default)</h1>
+</div>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.one {
+  border-style: solid;
+  border-width: 5px 20px; /* 5px top and bottom, 20px on the sides */
+}
+
+p.two {
+  border-style: solid;
+  border-width: 20px 5px; /* 20px top and bottom, 5px on the sides */
+}
+
+p.three {
+  border-style: solid;
+  border-width: 25px 10px 4px 35px; /* 25px top, 10px right, 4px bottom and 35px left */
+}
+</style>
+</head>
+<body>
+
+<h2>The border-width Property</h2>
+<p>The border-width property can have from one to four values (for the top border, right border, bottom border, and the left border):</p>
+
+<p class="one">Some text.</p>
+<p class="two">Some text.</p>
+<p class="three">Some text.</p>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.normal {
+  border: 2px solid red;
+  padding: 5px;
+}
+
+p.round1 {
+  border: 2px solid red;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+p.round2 {
+  border: 2px solid red;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+p.round3 {
+  border: 2px solid red;
+  border-radius: 12px;
+  padding: 5px;
+}
+</style>
+</head>
+<body>
+
+<h2>The border-radius Property</h2>
+<p>This property is used to add rounded borders to an element:</p>
+
+<p class="normal">Normal border</p>
+<p class="round1">Round border</p>
+<p class="round2">Rounder border</p>
+<p class="round3">Roundest border</p>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  border: 1px solid black;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  background-color: lightblue;
+}
+</style>
+</head>
+<body>
+
+<h2>Using individual margin properties</h2>
+
+<div>This div element has a top margin of 100px, a right margin of 150px, a bottom margin of 100px, and a left margin of 80px.</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+  position: relative;
+}
+
+.black-box {
+  position: relative;
+  z-index: 1;
+  border: 2px solid black;
+  height: 100px;
+  margin: 30px;
+}
+
+.gray-box {
+  position: absolute;
+  z-index: 3; /* gray box will be above both green and black box */
+  background: lightgray;
+  height: 60px;  
+  width: 70%;
+  left: 50px;
+  top: 50px;
+}
+
+.green-box {
+  position: absolute;
+  z-index: 2; /* green box will be above black box */
+  background: lightgreen;
+  width: 35%;
+  left: 270px;
+  top: -15px;
+  height: 100px;
+}
+</style>
+</head>
+<body>
+
+<h1>Z-index Example</h1>
+
+<p>An element with greater stack order is always above an element with a lower stack order.</p>
+
+<div class="container">
+  <div class="black-box">Black box (z-index: 1)</div>
+  <div class="gray-box">Gray box (z-index: 3)</div>
+  <div class="green-box">Green box (z-index: 2)</div>
+</div>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  background-color: coral;
+  width: 200px;
+  height: 65px;
+  border: 1px solid;
+  overflow: visible;
+}
+</style>
+</head>
+<body>
+
+<h2>Overflow: visible</h2>
+
+<p>By default, the overflow is visible, meaning that it is not clipped and it renders outside the element's box:</p>
+
+<div>You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  background-color: coral;
+  width: 200px;
+  height: 65px;
+  border: 1px solid black;
+  overflow: hidden;
+}
+</style>
+</head>
+<body>
+
+<h2>Overflow: hidden</h2>
+
+<p>With the hidden value, the overflow is clipped, and the rest of the content is hidden:</p>
+<p>Try to remove the overflow property to understand how it works.</p>
+
+<div>You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  background-color: coral;
+  width: 200px;
+  height: 100px;
+  border: 1px solid black;
+  overflow: scroll;
+}
+</style>
+</head>
+<body>
+
+<h2>Overflow: scroll</h2>
+
+<p>Setting the overflow value to scroll, the overflow is clipped and a scrollbar is added to scroll inside the box. Note that this will add a scrollbar both horizontally and vertically (even if you do not need it):</p>
+
+<div>You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+
+</body>
+</html>
+
+
